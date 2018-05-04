@@ -8,13 +8,30 @@ body {
   background-color: #c1b5ad;
 }
 
+#container {
+  display: flex;
+  flex-direction: row;
+}
 #navbar {
   width: 100vw;
-  height: 10vh;
+  height: 8vh;
   background-color: aquamarine;
+  position: center;
 }
 
 #map {
-  height: 40vh;
-  width: 40vw;
+  height: calc(100vh - 8vh);
+  width: 50vw;
+}
+
+.selections {
+  background-color: yellow;
+  height: calc((100vh - 8vh) / 2);
+  width: 50vw;
+}
+
+.display {
+  background-color: magenta;
+  height: calc((100vh - 8vh) / 2);
+  width: 50vw;
 }

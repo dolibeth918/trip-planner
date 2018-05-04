@@ -3,13 +3,24 @@
 
 <head>
   <title>Trip Planner</title>
-  <script src="bundle.js"></script>
+  <script src="bundle.js" defer></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <div id="map">
+  <header>
+    <div id="navbar"></div>
+  </header>
+  <div id="container">
+    <div id="map">
+    </div>
+    <div id="sidebar">
+      <div class="selections"></div>
+      <div class="display"></div>
+    </div>
   </div>
+
 </body>
 
 </html>
